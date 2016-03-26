@@ -1,0 +1,120 @@
+<!Doctype html>
+<html ng-app="demoApp">
+<head>
+    <meta charset="utf-8"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+    <link href="css/demo.css" rel="stylesheet" />
+    <title>NewsFeed</title>
+</head>
+<div id="big_wrapper">
+   <header id="top_header">
+      <h1><b> Breaking News </b></h1></header>
+<nav id="top_menu">
+<ul>
+     <li>HOME</li>
+     <li>NEWSPAPER</li>
+     <li>OPINION</li>
+     <li>SPORTS</li>
+     <li>TECHNOLOGY</li>
+     <li>ENTERTAINMENT</li>
+     <li>MORE</li>
+     <li>LIFESTYLE</li>
+     <li>SHOWBIZ</li>
+    
+</ul>
+</nav>
+</div>
+
+<body ng-controller="demoController"  style="background-color:#282828;">
+<button id="top" ng-click="scrollTo('bottom')"> Go to bottom news! </button>
+<br /><br />
+<div id="bacon_wrapper">
+    <p><h1>Bad weather blame plane crush in Russia</h1>
+    <img src="{{place.hala}}" 
+     alt="{{place.name+' hala'}}" 
+     style="height:563px; width:1000px" /> 
+
+    
+
+    <p>After circling a southern Russian airport for more than two hours because of high ground-level winds and poor visibility, a passenger jet from the United Arab Emirates crashed during a landing attempt, killing all 62 people aboard.
+
+The flydubai Boeing 737 took off from Dubai and was scheduled to land at the Rostov-on-Don airport at 1:20 a.m. Saturday (6:20 p.m. ET Friday), Russian Emergencies Minister Vladimir Puchkov said.
+
+But it didn't come down -- about 800 feet from a runway -- until 3:50 a.m. By that point, Russian state media reported, there were winds of about 60 mph.
+
+Authorities have ruled out terrorism as a cause of the crash. Instead, according to investigative committee spokeswoman Oksana Kovrizhnaya, they will be looking at three possibilities: technical issues, severe weather and human error. </p>
+
+ </p>   
+<p><h1>Taskin Ahmed has been suspended for good bowling performance</h1>
+<p>Taskin was reported for a suspect action during the World T20 round-one match against Netherlands, but was allowed to play in the main round match against Pakistan, in which match he had figures of 2 for 32. He underwent an assessment in Chennai last week, and as a result of that test by an independent committee, has now been suspended from international cricket.
+
+However, it has been revealed that there were severe flouting of guidelines in the testing session which doomed Taskin, and consequently, Bangladesh.</p>
+<img src="{{player.pic}}" 
+     alt="{{player.name+' pic'}}" 
+     style="height:448px; width:800px" /> 
+</p>
+<p><h1>84-year-old saved by his daughter</h1>
+<p>
+    A loud bang and shaking of ground woke her up around 1:30am on Friday at her fourth-floor apartment in the six-storey building in Banani.
+
+“I thought it was an earthquake. My first concern was to get my 84-year-old father out of the house,” said Nayer Rahman, a resident of the building.
+
+Nayer along with her father Akramuzzaman, a retired professor of Bangladesh Agricultural University in Mymensingh, lived in the apartment.
+
+“When I went out, there were pockets of fire across the apartment. The blast had shattered the doors,” she told The Daily Star about the ordeal of the night.
+
+Nayer, 60, went straight to her father who has been suffering from old age ailments and also back pain for the last one month. The two followed some other residents of the building towards the stairs to the roof.
+
+“The staircase was dark. The heat and smoke from the fire was unbearable and my father almost choked with the smoke,” she said.
+
+She took a scarf from another woman and wrapped it loosely around her father's mouth and nose so that he could keep breathing.
+
+After reaching the roof, she found many other residents already there. “We felt so thirsty. Many were shouting 'water, water'.”
+
+People were trapped in the roof for over an hour, said Nayer.
+
+Neighbours from adjacent buildings focused some light on the victims and hurled small bottles of water at the roof.
+
+“We survived by drinking the water and spraying some on the roof which was heated up,” she said.
+
+Locals informed the police and fire brigade about the fire.
+
+
+<img src="{{woman.pica}}"
+     alt="{{woman.name+' pica'}}" 
+     style="height:474px; width:712px" /> 
+</p>    
+</p>
+<p><h1>Bangladeshis among 600 migrant rescued in Libya</h1>
+<img src="{{migrant.pict}}"
+     alt="{{migrant.name+' pict'}}" 
+     style="height:472px; width:842px" /> 
+<p>
+    Nearly 600 migrants mostly from sub-Saharan African countries and Bangladesh were rescued by Libyan coast guards yesterday.
+Libyan authorities said they had rescued the migrants from four boats, one of which sank.
+Bodies of four dead women had been recovered, and some migrants were still missing, said a spokesman for Libyan naval forces, Ayoub Qassem.
+Those rescued off the coast of western Libya yesterday included migrants from sub-Saharan African countries and from Bangladesh, Qassem said.
+More than 550 other migrants were rescued in other operations between Wednesday and Friday. Seventeen saved on Thursday had been seriously injured when their boat caught fire, he said.
+Italy's coast guard said more than 900 migrants were rescued in four separate operations in the Strait of Sicily yesterday.
+Italian emergency services recovered one corpse during their rescue operations.
+Now into the second year of its worst migration crisis since World War Two, Europe has seen more than 1.2 million people arrive since the beginning of 2015, most of them from Africa and the Middle East.
+Italy's coast guard has continued to pick up migrants in trouble in the stretch of water between its southern coast and North Africa, although most people seeking a better life in Europe have taken less dangerous routes to Greece.
+Libya has been in turmoil, and smuggling networks that send migrants across the Mediterranean towards Europe are deeply embedded there. The EU has warned that Libya could be the source of a new escalation of Europe's migration crisis.
+The Italian coast guard said it had rescued 378 migrants in two separate operations yesterday. Another 112 migrants were picked up by a vessel operated for the European Union border agency Frontex and another 420 people by a ship under the EU's EUNAVFOR mission in the Mediterranean.
+The coast guard gave no details on the nationalities of the victim or those rescued.
+</p>
+</p>
+ <aside id="side_news">
+               <h4>Samsung Galaxy S7: <a href="http://www.samsung.com">Check here</a></h4>
+           <p><iframe width="560" height="315" src="https://www.youtube.com/epmbed/yh1TP9tpSsQ" frameborder="0" allowfullscreen></iframe></p>
+           </aside>
+
+
+
+</div>
+<br />
+
+<button id="bottom" ng-click="scrollTo('top')">Go to top news!</button>
+</body>
+</html>
